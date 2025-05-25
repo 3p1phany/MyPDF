@@ -1,0 +1,25 @@
+{
+  "name": "pdf-reader-api",
+  "version": "1.0.0",
+  "description": "PDF阅读器云端同步API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Building...'",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.4"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.21"
+  },
+  "keywords": [
+    "pdf",
+    "reader",
+    "sync",
+    "cloud"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
