@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Reader API</title>
+    <meta charset="utf-8">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 50px auto; 
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 PDF Reader API</h1>
+        <p>PDF阅读器云端同步API服务正在运行中...</p>
+        
+        <h2>📡 API端点</h2>
+        <div class="endpoint">POST /api/auth/register - 用户注册</div>
+        <div class="endpoint">POST /api/auth/login - 用户登录</div>
+        <div class="endpoint">GET /api/reading-records - 获取阅读记录</div>
+        <div class="endpoint">POST /api/reading-records - 同步阅读记录</div>
+        <div class="endpoint">GET /api/reading-records/[fileId] - 获取单个记录</div>
+        <div class="endpoint">DELETE /api/reading-records/[fileId] - 删除记录</div>
+        
+        <h2>🔗 连接配置</h2>
+        <p>在PDF阅读器中配置API地址：</p>
+        <div class="endpoint" id="apiUrl"></div>
+        
+        <script>
+            document.getElementById('apiUrl').textContent = 
+                window.location.origin + '/api';
+        </script>
+    </div>
+</body>
+</html>
